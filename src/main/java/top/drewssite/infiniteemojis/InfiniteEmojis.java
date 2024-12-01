@@ -20,6 +20,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import top.drewssite.infiniteemojis.item.EmojiItems;
+import top.drewssite.infiniteemojis.item.EyeItems;
 import top.drewssite.infiniteemojis.item.ModCreativeModeTabs;
 import top.drewssite.infiniteemojis.item.ModItems;
 
@@ -48,6 +50,8 @@ public class InfiniteEmojis {
     // My registers
     ModCreativeModeTabs.register(modEventBus);
     ModItems.register(modEventBus);
+    EyeItems.register(modEventBus);
+    EmojiItems.register(modEventBus);
 
     // Register ourselves for server and other game events we are interested in
     // This is different from the mod event bus, this bus' scope is the whole game

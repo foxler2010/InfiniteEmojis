@@ -9,7 +9,7 @@ import top.drewssite.infiniteemojis.InfiniteEmojis;
 import top.drewssite.infiniteemojis.item.custom.MetalDetectorItem;
 
 /**
- * Items added by the mod.
+ * General items added by the mod.
  */
 public class ModItems {
 
@@ -23,52 +23,6 @@ public class ModItems {
    * Basic face item, used for building all emojis
    */
   public static final RegistryObject<Item> FACE = ITEMS.register("face",
-      () -> new Item(new Item.Properties()));
-
-  /*
-   * Eyes
-   */
-  public static final RegistryObject<Item> EYES = ITEMS.register("eyes",
-      () -> new Item(new Item.Properties()));
-
-  public static final RegistryObject<Item> BIG_EYES = ITEMS.register("big_eyes",
-      () -> new Item(new Item.Properties()));
-
-  public static final RegistryObject<Item> SMILING_EYES = ITEMS.register("smiling_eyes",
-      () -> new Item(new Item.Properties()));
-
-  public static final RegistryObject<Item> SQUINTING_EYES = ITEMS.register("squinting_eyes",
-      () -> new Item(new Item.Properties()));
-
-  public static final RegistryObject<Item> WINKING_EYES = ITEMS.register("winking_eyes",
-      () -> new Item(new Item.Properties()));
-
-  public static final RegistryObject<Item> HEART_EYES = ITEMS.register("heart_eyes",
-      () -> new Item(new Item.Properties()));
-
-  public static final RegistryObject<Item> STAR_EYES = ITEMS.register("star_eyes",
-      () -> new Item(new Item.Properties()));
-
-  public static final RegistryObject<Item> CLOSED_EYES = ITEMS.register("closed_eyes",
-      () -> new Item(new Item.Properties()));
-
-  public static final RegistryObject<Item> SMIRKING_EYES = ITEMS.register("smirking_eyes",
-      () -> new Item(new Item.Properties()));
-
-  public static final RegistryObject<Item> ZANY_EYES = ITEMS.register("zany_eyes",
-      () -> new Item(new Item.Properties()));
-
-  public static final RegistryObject<Item> DOLLAR_EYES = ITEMS.register("dollar_eyes",
-      () -> new Item(new Item.Properties()));
-
-  public static final RegistryObject<Item> BIG_EYEBROWS_UP_EYES =
-      ITEMS.register("big_eyebrows_up_eyes",
-          () -> new Item(new Item.Properties()));
-
-  public static final RegistryObject<Item> GLARING_EYES = ITEMS.register("glaring_eyes",
-      () -> new Item(new Item.Properties()));
-
-  public static final RegistryObject<Item> THINKING_EYES = ITEMS.register("thinking_eyes",
       () -> new Item(new Item.Properties()));
 
   /*
@@ -125,11 +79,11 @@ public class ModItems {
   /**
    * Register the DeferredRegister to the event bus.
    *
-   * @param event Event bus to register to.
+   * @param eventBus Event bus to register to.
    */
-  public static void register(IEventBus event) {
+  public static void register(IEventBus eventBus) {
 
-    ITEMS.register(event);
+    ITEMS.register(eventBus);
 
   }
 

@@ -25,20 +25,20 @@ public class ModCreativeModeTabs {
             // Face
             output.accept(ModItems.FACE.get());
             // Eyes
-            output.accept(ModItems.EYES.get());
-            output.accept(ModItems.BIG_EYES.get());
-            output.accept(ModItems.SMILING_EYES.get());
-            output.accept(ModItems.SQUINTING_EYES.get());
-            output.accept(ModItems.WINKING_EYES.get());
-            output.accept(ModItems.HEART_EYES.get());
-            output.accept(ModItems.STAR_EYES.get());
-            output.accept(ModItems.CLOSED_EYES.get());
-            output.accept(ModItems.SMIRKING_EYES.get());
-            output.accept(ModItems.ZANY_EYES.get());
-            output.accept(ModItems.DOLLAR_EYES.get());
-            output.accept(ModItems.BIG_EYEBROWS_UP_EYES.get());
-            output.accept(ModItems.GLARING_EYES.get());
-            output.accept(ModItems.THINKING_EYES.get());
+            output.accept(EyeItems.EYES.get());
+            output.accept(EyeItems.BIG_EYES.get());
+            output.accept(EyeItems.SMILING_EYES.get());
+            output.accept(EyeItems.SQUINTING_EYES.get());
+            output.accept(EyeItems.WINKING_EYES.get());
+            output.accept(EyeItems.HEART_EYES.get());
+            output.accept(EyeItems.STAR_EYES.get());
+            output.accept(EyeItems.CLOSED_EYES.get());
+            output.accept(EyeItems.SMIRKING_EYES.get());
+            output.accept(EyeItems.ZANY_EYES.get());
+            output.accept(EyeItems.DOLLAR_EYES.get());
+            output.accept(EyeItems.BIG_EYEBROWS_UP_EYES.get());
+            output.accept(EyeItems.GLARING_EYES.get());
+            output.accept(EyeItems.THINKING_EYES.get());
             // Mouths
             output.accept(ModItems.SMILE.get());
             output.accept(ModItems.BEAMING_SMILE.get());
@@ -54,6 +54,8 @@ public class ModCreativeModeTabs {
             output.accept(ModItems.DROOLING_MOUTH.get());
             output.accept(ModItems.PARTY_MOUTH.get());
             output.accept(ModItems.BUCK_TOOTHED_MOUTH.get());
+            //Emojis
+            output.accept(EmojiItems.GRINNING_FACE.get());
             // Metal detector
             output.accept(ModItems.METAL_DETECTOR.get());
           })
