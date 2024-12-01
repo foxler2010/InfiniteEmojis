@@ -59,8 +59,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
   @Override
   protected void buildRecipes(RecipeOutput recipeOutput) {
 
-    //oreSmelting(recipeOutput, EYES, RecipeCategory.MISC, ModItems.FACE.get(), .25f, 200, "eyes");
-    //oreBlasting(recipeOutput, EYES, RecipeCategory.MISC, ModItems.FACE.get(), .25f, 100, "eyes");
+    oreSmelting(recipeOutput, EYES, RecipeCategory.MISC, ModItems.FACE.get(), .25f, 200, "eyes");
+    oreBlasting(recipeOutput, EYES, RecipeCategory.MISC, ModItems.FACE.get(), .25f, 100, "eyes");
 
     ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FACE.get())
         .pattern("SSS")

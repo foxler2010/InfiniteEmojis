@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_star_eyes": {
+      "conditions": {
+        "items": [
+          {
+            "items": "infiniteemojis:star_eyes"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "infiniteemojis:face_from_smelting_star_eyes"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_star_eyes"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "infiniteemojis:face_from_smelting_star_eyes"
+    ]
+  }
+}

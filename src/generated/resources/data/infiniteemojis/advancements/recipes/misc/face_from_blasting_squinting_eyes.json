@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_squinting_eyes": {
+      "conditions": {
+        "items": [
+          {
+            "items": "infiniteemojis:squinting_eyes"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "infiniteemojis:face_from_blasting_squinting_eyes"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_squinting_eyes"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "infiniteemojis:face_from_blasting_squinting_eyes"
+    ]
+  }
+}
