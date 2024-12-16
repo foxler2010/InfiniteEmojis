@@ -1,19 +1,19 @@
-[30Nov2024 20:52:00.697] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 16, --assetsDir, C:\Users\malonea\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, infiniteemojis, --all, --output, C:\Users\malonea\Documents\code\infiniteemojis\src\generated\resources, --existing, C:\Users\malonea\Documents\code\infiniteemojis\src\main\resources]
-[30Nov2024 20:52:00.704] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.5+11-LTS
-[30Nov2024 20:52:00.707] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.5 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
-[30Nov2024 20:52:00.947] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
-[30Nov2024 20:52:01.184] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=jar:file:///C:/Users/malonea/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar!/ Service=ModLauncher Env=UNKNOWN
-[30Nov2024 20:52:02.924] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[30Nov2024 20:52:04.256] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\malonea\.gradle\caches\forge_gradle\assets, --assetIndex, 16, --mod, infiniteemojis, --all, --output, C:\Users\malonea\Documents\code\infiniteemojis\src\generated\resources, --existing, C:\Users\malonea\Documents\code\infiniteemojis\src\main\resources]
-[30Nov2024 20:52:13.050] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 50.1.0, for MC 1.20.6 with MCP 20240429.135109
-[30Nov2024 20:52:13.053] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v50.1.0 Initialized
-[30Nov2024 20:52:13.094] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
-[30Nov2024 20:52:14.235] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [infiniteemojis]
-[30Nov2024 20:52:14.346] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/malonea/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.6-50.1.0_mapped_parchment_2024.06.16-1.20.6/forge-1.20.6-50.1.0_mapped_parchment_2024.06.16-1.20.6.jar%230!/assets/.mcassetsroot' uses unexpected schema
-[30Nov2024 20:52:14.347] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/malonea/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.6-50.1.0_mapped_parchment_2024.06.16-1.20.6/forge-1.20.6-50.1.0_mapped_parchment_2024.06.16-1.20.6.jar%230!/data/.mcassetsroot' uses unexpected schema
-[30Nov2024 20:52:14.622] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[30Nov2024 20:52:14.959] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 335 ms
-[30Nov2024 20:52:14.959] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: infiniteemojis
-[30Nov2024 20:52:15.022] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: infiniteemojis finished after 61 ms
-[30Nov2024 20:52:15.022] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 401 ms
-[30Nov2024 20:52:15.035] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 91, old count: 7, new count: 92, removed stale: 0, written: 84
+[16Dec2024 16:41:53.816] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 16, --assetsDir, C:\Users\malonea\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, infiniteemojis, --all, --output, C:\Users\malonea\Documents\code\infiniteemojis\src\generated\resources, --existing, C:\Users\malonea\Documents\code\infiniteemojis\src\main\resources]
+[16Dec2024 16:41:53.821] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.5+11-LTS
+[16Dec2024 16:41:53.822] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.5 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[16Dec2024 16:41:53.995] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
+[16Dec2024 16:41:54.219] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=jar:file:///C:/Users/malonea/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar!/ Service=ModLauncher Env=UNKNOWN
+[16Dec2024 16:41:55.781] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[16Dec2024 16:41:57.407] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\malonea\.gradle\caches\forge_gradle\assets, --assetIndex, 16, --mod, infiniteemojis, --all, --output, C:\Users\malonea\Documents\code\infiniteemojis\src\generated\resources, --existing, C:\Users\malonea\Documents\code\infiniteemojis\src\main\resources]
+[16Dec2024 16:42:05.735] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 50.1.0, for MC 1.20.6 with MCP 20240429.135109
+[16Dec2024 16:42:05.743] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v50.1.0 Initialized
+[16Dec2024 16:42:05.805] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
+[16Dec2024 16:42:06.990] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [infiniteemojis]
+[16Dec2024 16:42:07.117] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/malonea/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.6-50.1.0_mapped_parchment_2024.06.16-1.20.6/forge-1.20.6-50.1.0_mapped_parchment_2024.06.16-1.20.6.jar%230!/assets/.mcassetsroot' uses unexpected schema
+[16Dec2024 16:42:07.119] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/malonea/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.6-50.1.0_mapped_parchment_2024.06.16-1.20.6/forge-1.20.6-50.1.0_mapped_parchment_2024.06.16-1.20.6.jar%230!/data/.mcassetsroot' uses unexpected schema
+[16Dec2024 16:42:07.463] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[16Dec2024 16:42:08.002] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 537 ms
+[16Dec2024 16:42:08.003] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: infiniteemojis
+[16Dec2024 16:42:08.081] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: infiniteemojis finished after 76 ms
+[16Dec2024 16:42:08.081] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 619 ms
+[16Dec2024 16:42:08.095] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 136, old count: 136, new count: 137, removed stale: 0, written: 0

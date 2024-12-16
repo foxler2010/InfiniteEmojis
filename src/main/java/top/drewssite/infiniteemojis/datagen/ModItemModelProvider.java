@@ -12,6 +12,7 @@ import top.drewssite.infiniteemojis.InfiniteEmojis;
 import top.drewssite.infiniteemojis.item.EmojiItems;
 import top.drewssite.infiniteemojis.item.EyeItems;
 import top.drewssite.infiniteemojis.item.ModItems;
+import top.drewssite.infiniteemojis.item.MouthItems;
 
 /**
  * Provider of item models for items added by the mod.
@@ -39,20 +40,20 @@ public class ModItemModelProvider extends ItemModelProvider {
     // ModItems
     simpleItem(ModItems.FACE);
 
-    simpleItem(ModItems.SMILE);
-    simpleItem(ModItems.BEAMING_SMILE);
-    simpleItem(ModItems.SLIGHT_SMILE);
-    simpleItem(ModItems.SMALL_SMILE);
-    simpleItem(ModItems.KISSING_MOUTH);
-    simpleItem(ModItems.SMIRKING_MOUTH);
-    simpleItem(ModItems.YUM_MOUTH);
-    simpleItem(ModItems.TONGUE_MOUTH);
-    simpleItem(ModItems.MONEY_MOUTH);
-    simpleItem(ModItems.SURPRISED_MOUTH);
-    simpleItem(ModItems.THINKING_MOUTH);
-    simpleItem(ModItems.DROOLING_MOUTH);
-    simpleItem(ModItems.PARTY_MOUTH);
-    simpleItem(ModItems.BUCK_TOOTHED_MOUTH);
+    simpleItem(MouthItems.SMILE);
+    simpleItem(MouthItems.BEAMING_SMILE);
+    simpleItem(MouthItems.SLIGHT_SMILE);
+    simpleItem(MouthItems.SMALL_SMILE);
+    simpleItem(MouthItems.KISSING_MOUTH);
+    simpleItem(MouthItems.SMIRKING_MOUTH);
+    simpleItem(MouthItems.YUM_MOUTH);
+    simpleItem(MouthItems.TONGUE_MOUTH);
+    simpleItem(MouthItems.MONEY_MOUTH);
+    simpleItem(MouthItems.SURPRISED_MOUTH);
+    simpleItem(MouthItems.THINKING_MOUTH);
+    simpleItem(MouthItems.DROOLING_MOUTH);
+    simpleItem(MouthItems.PARTY_MOUTH);
+    simpleItem(MouthItems.BUCK_TOOTHED_MOUTH);
 
     simpleItem(ModItems.METAL_DETECTOR);
 
@@ -74,6 +75,21 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     // EmojiItems
     simpleItem(EmojiItems.GRINNING_FACE);
+    simpleItem(EmojiItems.GRINNING_FACE_WITH_BIG_EYES);
+    simpleItem(EmojiItems.GRINNING_FACE_WITH_SMILING_EYES);
+    simpleItem(EmojiItems.BEAMING_FACE);
+    simpleItem(EmojiItems.GRINNING_SQUINTING_FACE);
+    simpleItem(EmojiItems.SLIGHTLY_SMILING_FACE);
+    simpleItem(EmojiItems.WINKING_FACE);
+    simpleItem(EmojiItems.SMILING_FACE_WITH_SMILING_EYES);
+    simpleItem(EmojiItems.HEART_EYED_FACE);
+    simpleItem(EmojiItems.STAR_STRUCK_FACE);
+    simpleItem(EmojiItems.FACE_BLOWING_A_KISS);
+    simpleItem(EmojiItems.KISSING_FACE);
+    simpleItem(EmojiItems.SMILING_FACE_WITH_CLOSED_EYES);
+    simpleItem(EmojiItems.KISSING_FACE_WITH_CLOSED_EYES);
+    simpleItem(EmojiItems.KISSING_FACE_WITH_SMILING_EYES);
+    simpleItem(EmojiItems.SMIRKING_FACE);
 
   }
 

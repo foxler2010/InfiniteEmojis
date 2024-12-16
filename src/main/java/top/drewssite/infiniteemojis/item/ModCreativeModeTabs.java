@@ -17,9 +17,10 @@ public class ModCreativeModeTabs {
   public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
       DeferredRegister.create(Registries.CREATIVE_MODE_TAB, InfiniteEmojis.MOD_ID);
 
+  @SuppressWarnings("unused")
   public static final RegistryObject<CreativeModeTab> INFINITE_EMOJIS_TAB =
       CREATIVE_MODE_TABS.register("infinite_emojis_tab", () -> CreativeModeTab.builder()
-          .icon(() -> new ItemStack(ModItems.FACE.get()))
+          .icon(() -> new ItemStack(EmojiItems.GRINNING_FACE.get()))
           .title(Component.translatable("creativetab.infinite_emojis_tab"))
           .displayItems((parameters, output) -> {
             // Face
@@ -40,22 +41,37 @@ public class ModCreativeModeTabs {
             output.accept(EyeItems.GLARING_EYES.get());
             output.accept(EyeItems.THINKING_EYES.get());
             // Mouths
-            output.accept(ModItems.SMILE.get());
-            output.accept(ModItems.BEAMING_SMILE.get());
-            output.accept(ModItems.SLIGHT_SMILE.get());
-            output.accept(ModItems.SMALL_SMILE.get());
-            output.accept(ModItems.KISSING_MOUTH.get());
-            output.accept(ModItems.SMIRKING_MOUTH.get());
-            output.accept(ModItems.YUM_MOUTH.get());
-            output.accept(ModItems.TONGUE_MOUTH.get());
-            output.accept(ModItems.MONEY_MOUTH.get());
-            output.accept(ModItems.SURPRISED_MOUTH.get());
-            output.accept(ModItems.THINKING_MOUTH.get());
-            output.accept(ModItems.DROOLING_MOUTH.get());
-            output.accept(ModItems.PARTY_MOUTH.get());
-            output.accept(ModItems.BUCK_TOOTHED_MOUTH.get());
+            output.accept(MouthItems.SMILE.get());
+            output.accept(MouthItems.BEAMING_SMILE.get());
+            output.accept(MouthItems.SLIGHT_SMILE.get());
+            output.accept(MouthItems.SMALL_SMILE.get());
+            output.accept(MouthItems.KISSING_MOUTH.get());
+            output.accept(MouthItems.SMIRKING_MOUTH.get());
+            output.accept(MouthItems.YUM_MOUTH.get());
+            output.accept(MouthItems.TONGUE_MOUTH.get());
+            output.accept(MouthItems.MONEY_MOUTH.get());
+            output.accept(MouthItems.SURPRISED_MOUTH.get());
+            output.accept(MouthItems.THINKING_MOUTH.get());
+            output.accept(MouthItems.DROOLING_MOUTH.get());
+            output.accept(MouthItems.PARTY_MOUTH.get());
+            output.accept(MouthItems.BUCK_TOOTHED_MOUTH.get());
             //Emojis
             output.accept(EmojiItems.GRINNING_FACE.get());
+            output.accept(EmojiItems.GRINNING_FACE_WITH_BIG_EYES.get());
+            output.accept(EmojiItems.GRINNING_FACE_WITH_SMILING_EYES.get());
+            output.accept(EmojiItems.BEAMING_FACE.get());
+            output.accept(EmojiItems.GRINNING_SQUINTING_FACE.get());
+            output.accept(EmojiItems.SLIGHTLY_SMILING_FACE.get());
+            output.accept(EmojiItems.WINKING_FACE.get());
+            output.accept(EmojiItems.SMILING_FACE_WITH_SMILING_EYES.get());
+            output.accept(EmojiItems.HEART_EYED_FACE.get());
+            output.accept(EmojiItems.STAR_STRUCK_FACE.get());
+            output.accept(EmojiItems.FACE_BLOWING_A_KISS.get());
+            output.accept(EmojiItems.KISSING_FACE.get());
+            output.accept(EmojiItems.SMILING_FACE_WITH_CLOSED_EYES.get());
+            output.accept(EmojiItems.KISSING_FACE_WITH_CLOSED_EYES.get());
+            output.accept(EmojiItems.KISSING_FACE_WITH_SMILING_EYES.get());
+            output.accept(EmojiItems.SMIRKING_FACE.get());
             // Metal detector
             output.accept(ModItems.METAL_DETECTOR.get());
           })

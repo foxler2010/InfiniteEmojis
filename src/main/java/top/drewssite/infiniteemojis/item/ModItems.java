@@ -26,51 +26,6 @@ public class ModItems {
       () -> new Item(new Item.Properties()));
 
   /*
-   * Mouths
-   */
-  public static final RegistryObject<Item> SMILE = ITEMS.register("smile",
-      () -> new Item(new Item.Properties()));
-
-  public static final RegistryObject<Item> BEAMING_SMILE = ITEMS.register("beaming_smile",
-      () -> new Item(new Item.Properties()));
-
-  public static final RegistryObject<Item> SLIGHT_SMILE = ITEMS.register("slight_smile",
-      () -> new Item(new Item.Properties()));
-
-  public static final RegistryObject<Item> SMALL_SMILE = ITEMS.register("small_smile",
-      () -> new Item(new Item.Properties()));
-
-  public static final RegistryObject<Item> KISSING_MOUTH = ITEMS.register("kissing_mouth",
-      () -> new Item(new Item.Properties()));
-
-  public static final RegistryObject<Item> SMIRKING_MOUTH = ITEMS.register("smirking_mouth",
-      () -> new Item(new Item.Properties()));
-
-  public static final RegistryObject<Item> YUM_MOUTH = ITEMS.register("yum_mouth",
-      () -> new Item(new Item.Properties()));
-
-  public static final RegistryObject<Item> TONGUE_MOUTH = ITEMS.register("tongue_mouth",
-      () -> new Item(new Item.Properties()));
-
-  public static final RegistryObject<Item> MONEY_MOUTH = ITEMS.register("money_mouth",
-      () -> new Item(new Item.Properties()));
-
-  public static final RegistryObject<Item> SURPRISED_MOUTH = ITEMS.register("surprised_mouth",
-      () -> new Item(new Item.Properties()));
-
-  public static final RegistryObject<Item> THINKING_MOUTH = ITEMS.register("thinking_mouth",
-      () -> new Item(new Item.Properties()));
-
-  public static final RegistryObject<Item> DROOLING_MOUTH = ITEMS.register("drooling_mouth",
-      () -> new Item(new Item.Properties()));
-
-  public static final RegistryObject<Item> PARTY_MOUTH = ITEMS.register("party_mouth",
-      () -> new Item(new Item.Properties()));
-
-  public static final RegistryObject<Item> BUCK_TOOTHED_MOUTH = ITEMS.register("buck_toothed_mouth",
-      () -> new Item(new Item.Properties()));
-
-  /*
    * Metal detector, learned how to make advanced/custom items by making it.
    */
   public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",

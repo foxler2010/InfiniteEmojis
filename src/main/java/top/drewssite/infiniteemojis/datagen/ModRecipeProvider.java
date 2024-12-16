@@ -22,6 +22,7 @@ import top.drewssite.infiniteemojis.InfiniteEmojis;
 import top.drewssite.infiniteemojis.item.EmojiItems;
 import top.drewssite.infiniteemojis.item.EyeItems;
 import top.drewssite.infiniteemojis.item.ModItems;
+import top.drewssite.infiniteemojis.item.MouthItems;
 
 /**
  * Provider of recipes involving items added by the mod.
@@ -59,10 +60,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
   @Override
   protected void buildRecipes(RecipeOutput recipeOutput) {
 
+    /*
+     * Allows to smelt any Eye-type item into a Face.
+     */
     oreSmelting(recipeOutput, EYES, RecipeCategory.MISC, ModItems.FACE.get(), .25f, 200, "eyes");
     oreBlasting(recipeOutput, EYES, RecipeCategory.MISC, ModItems.FACE.get(), .25f, 100, "eyes");
 
-    ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FACE.get())
+    /*
+     * Allows to craft nine Stick into one Face.
+     */
+    ShapedRecipeBuilder.shaped(RecipeCategory.MISC,
+            ModItems.FACE.get())
         .pattern("SSS")
         .pattern("SSS")
         .pattern("SSS")
@@ -71,14 +79,181 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         .save(recipeOutput);
 
     /*
+     * Grinning Face
      * The regular "smiley" emoji
      */
-    ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, EmojiItems.GRINNING_FACE.get())
+    ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
+            EmojiItems.GRINNING_FACE.get())
         .requires(ModItems.FACE.get())
         .requires(EyeItems.EYES.get())
-        .requires(ModItems.SMILE.get())
+        .requires(MouthItems.SMILE.get())
         .unlockedBy(getHasName(ModItems.FACE.get()), has(ModItems.FACE.get()))
         .save(recipeOutput);
+
+    /*
+     * Grinning Face with Big Eyes
+     */
+    ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
+            EmojiItems.GRINNING_FACE_WITH_BIG_EYES.get())
+        .requires(ModItems.FACE.get())
+        .requires(EyeItems.BIG_EYES.get())
+        .requires(MouthItems.SMILE.get())
+        .unlockedBy(getHasName(ModItems.FACE.get()), has(ModItems.FACE.get()))
+        .save(recipeOutput);
+
+    /*
+     * Grinning Face with Smiling Eyes
+     */
+    ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
+            EmojiItems.GRINNING_FACE_WITH_SMILING_EYES.get())
+        .requires(ModItems.FACE.get())
+        .requires(EyeItems.SMILING_EYES.get())
+        .requires(MouthItems.SMILE.get())
+        .unlockedBy(getHasName(ModItems.FACE.get()), has(ModItems.FACE.get()))
+        .save(recipeOutput);
+
+    /*
+     * Beaming Face
+     */
+    ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
+            EmojiItems.BEAMING_FACE.get())
+        .requires(ModItems.FACE.get())
+        .requires(EyeItems.SMILING_EYES.get())
+        .requires(MouthItems.BEAMING_SMILE.get())
+        .unlockedBy(getHasName(ModItems.FACE.get()), has(ModItems.FACE.get()))
+        .save(recipeOutput);
+
+    /*
+     * Grinning Squinting Face
+     */
+    ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
+            EmojiItems.GRINNING_SQUINTING_FACE.get())
+        .requires(ModItems.FACE.get())
+        .requires(EyeItems.SQUINTING_EYES.get())
+        .requires(MouthItems.SMILE.get())
+        .unlockedBy(getHasName(ModItems.FACE.get()), has(ModItems.FACE.get()))
+        .save(recipeOutput);
+
+    /*
+     * Slightly Smiling face
+     */
+    ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
+            EmojiItems.SLIGHTLY_SMILING_FACE.get())
+        .requires(ModItems.FACE.get())
+        .requires(EyeItems.EYES.get())
+        .requires(MouthItems.SLIGHT_SMILE.get())
+        .unlockedBy(getHasName(ModItems.FACE.get()), has(ModItems.FACE.get()))
+        .save(recipeOutput);
+
+    /*
+     * Winking Face
+     */
+    ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
+            EmojiItems.WINKING_FACE.get())
+        .requires(ModItems.FACE.get())
+        .requires(EyeItems.WINKING_EYES.get())
+        .requires(MouthItems.SLIGHT_SMILE.get())
+        .unlockedBy(getHasName(ModItems.FACE.get()), has(ModItems.FACE.get()))
+        .save(recipeOutput);
+
+    /*
+     * Smiling Face with Smiling Eyes
+     */
+    ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
+            EmojiItems.SMILING_FACE_WITH_SMILING_EYES.get())
+        .requires(ModItems.FACE.get())
+        .requires(EyeItems.SMILING_EYES.get())
+        .requires(MouthItems.SLIGHT_SMILE.get())
+        .unlockedBy(getHasName(ModItems.FACE.get()), has(ModItems.FACE.get()))
+        .save(recipeOutput);
+
+    /*
+     * Heart-eyed Face
+     */
+    ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
+            EmojiItems.HEART_EYED_FACE.get())
+        .requires(ModItems.FACE.get())
+        .requires(EyeItems.HEART_EYES.get())
+        .requires(MouthItems.SMILE.get())
+        .unlockedBy(getHasName(ModItems.FACE.get()), has(ModItems.FACE.get()))
+        .save(recipeOutput);
+
+    /*
+     * Star-struck Face
+     */
+    ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
+            EmojiItems.STAR_STRUCK_FACE.get())
+        .requires(ModItems.FACE.get())
+        .requires(EyeItems.STAR_EYES.get())
+        .requires(MouthItems.SMILE.get())
+        .unlockedBy(getHasName(ModItems.FACE.get()), has(ModItems.FACE.get()))
+        .save(recipeOutput);
+
+    /*
+     * Face Blowing a Kiss
+     */
+    ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
+            EmojiItems.FACE_BLOWING_A_KISS.get())
+        .requires(ModItems.FACE.get())
+        .requires(EyeItems.WINKING_EYES.get())
+        .requires(MouthItems.KISSING_MOUTH.get())
+        .unlockedBy(getHasName(ModItems.FACE.get()), has(ModItems.FACE.get()))
+        .save(recipeOutput);
+
+    /*
+     * Kissing Face
+     */
+    ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
+            EmojiItems.KISSING_FACE.get())
+        .requires(ModItems.FACE.get())
+        .requires(EyeItems.EYES.get())
+        .requires(MouthItems.KISSING_MOUTH.get())
+        .unlockedBy(getHasName(ModItems.FACE.get()), has(ModItems.FACE.get()))
+        .save(recipeOutput);
+
+    /*
+     * Smiling Face with Closed Eyes
+     */
+    ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
+            EmojiItems.SMILING_FACE_WITH_CLOSED_EYES.get())
+        .requires(ModItems.FACE.get())
+        .requires(EyeItems.CLOSED_EYES.get())
+        .requires(MouthItems.SLIGHT_SMILE.get())
+        .unlockedBy(getHasName(ModItems.FACE.get()), has(ModItems.FACE.get()))
+        .save(recipeOutput);
+    /*
+     * Kissing Face with Closed Eyes
+     */
+    ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
+            EmojiItems.KISSING_FACE_WITH_CLOSED_EYES.get())
+        .requires(ModItems.FACE.get())
+        .requires(EyeItems.CLOSED_EYES.get())
+        .requires(MouthItems.KISSING_MOUTH.get())
+        .unlockedBy(getHasName(ModItems.FACE.get()), has(ModItems.FACE.get()))
+        .save(recipeOutput);
+
+    /*
+     * Kissing Face with Smiling Eyes
+     */
+    ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
+            EmojiItems.KISSING_FACE_WITH_SMILING_EYES.get())
+        .requires(ModItems.FACE.get())
+        .requires(EyeItems.SMILING_EYES.get())
+        .requires(MouthItems.KISSING_MOUTH.get())
+        .unlockedBy(getHasName(ModItems.FACE.get()), has(ModItems.FACE.get()))
+        .save(recipeOutput);
+
+    /*
+     * Smirking Face
+     */
+    ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
+            EmojiItems.SMIRKING_FACE.get())
+        .requires(ModItems.FACE.get())
+        .requires(EyeItems.SMIRKING_EYES.get())
+        .requires(MouthItems.SMIRKING_MOUTH.get())
+        .unlockedBy(getHasName(ModItems.FACE.get()), has(ModItems.FACE.get()))
+        .save(recipeOutput);
+
 
   }
 

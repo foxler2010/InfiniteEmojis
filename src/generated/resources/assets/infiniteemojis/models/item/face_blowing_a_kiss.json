@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "infiniteemojis:item/face_blowing_a_kiss"
+  }
+}

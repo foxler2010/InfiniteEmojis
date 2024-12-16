@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "infiniteemojis:face"
+    },
+    {
+      "item": "infiniteemojis:big_eyes"
+    },
+    {
+      "item": "infiniteemojis:smile"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "infiniteemojis:grinning_face_with_big_eyes"
+  }
+}
