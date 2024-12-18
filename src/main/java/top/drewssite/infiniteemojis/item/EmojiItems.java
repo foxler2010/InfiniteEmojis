@@ -6,6 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import top.drewssite.infiniteemojis.InfiniteEmojis;
+import top.drewssite.infiniteemojis.item.custom.*;
 
 /**
  * Emoji items added by the mod.
@@ -26,71 +27,71 @@ public class EmojiItems {
    */
   public static RegistryObject<Item> GRINNING_FACE = EMOJIS.register(
       "grinning_face",
-      () -> new Item(new Item.Properties()));
+      () -> new GrinningFaceItem(new Item.Properties()));
 
   public static RegistryObject<Item> GRINNING_FACE_WITH_BIG_EYES = EMOJIS.register(
       "grinning_face_with_big_eyes",
-      () -> new Item(new Item.Properties()));
+      () -> new GrinningFaceWithBigEyesItem(new Item.Properties()));
 
   public static RegistryObject<Item> GRINNING_FACE_WITH_SMILING_EYES = EMOJIS.register(
       "grinning_face_with_smiling_eyes",
-      () -> new Item(new Item.Properties()));
+      () -> new GrinningFaceWithSmilingEyesItem(new Item.Properties()));
 
   // Emojipedia Name: Beaming Face with Smiling Eyes
   public static RegistryObject<Item> BEAMING_FACE = EMOJIS.register(
       "beaming_face",
-      () -> new Item(new Item.Properties()));
+      () -> new BeamingFaceItem(new Item.Properties()));
 
   public static RegistryObject<Item> GRINNING_SQUINTING_FACE = EMOJIS.register(
       "grinning_squinting_face",
-      () -> new Item(new Item.Properties()));
+      () -> new GrinningSquintingFaceItem(new Item.Properties()));
 
   public static RegistryObject<Item> SLIGHTLY_SMILING_FACE = EMOJIS.register(
       "slightly_smiling_face",
-      () -> new Item(new Item.Properties()));
+      () -> new SlightlySmilingFaceItem(new Item.Properties()));
 
   public static RegistryObject<Item> WINKING_FACE = EMOJIS.register(
       "winking_face",
-      () -> new Item(new Item.Properties()));
+      () -> new WinkingFaceItem(new Item.Properties()));
 
   public static RegistryObject<Item> SMILING_FACE_WITH_SMILING_EYES = EMOJIS.register(
       "smiling_face_with_smiling_eyes",
-      () -> new Item(new Item.Properties()));
+      () -> new SmilingFaceWithSmilingEyesItem(new Item.Properties()));
 
   // Emojipedia Name: Smiling Face with Heart Eyes
   public static RegistryObject<Item> HEART_EYED_FACE = EMOJIS.register(
       "heart_eyed_face",
-      () -> new Item(new Item.Properties()));
+      () -> new HeartEyedFaceItem(new Item.Properties()));
 
   // Emojipedia Name: Star-Struck
   public static RegistryObject<Item> STAR_STRUCK_FACE = EMOJIS.register(
       "star_struck_face",
-      () -> new Item(new Item.Properties()));
+      () -> new StarStruckFaceItem(new Item.Properties()));
 
   public static RegistryObject<Item> FACE_BLOWING_A_KISS = EMOJIS.register(
       "face_blowing_a_kiss",
-      () -> new Item(new Item.Properties()));
+      () -> new FaceBlowingAKissItem(new Item.Properties()));
 
   public static RegistryObject<Item> KISSING_FACE = EMOJIS.register(
       "kissing_face",
-      () -> new Item(new Item.Properties()));
+      () -> new KissingFaceItem(new Item.Properties()));
 
   // Emojipedia Name: Smiling Face
   public static RegistryObject<Item> SMILING_FACE_WITH_CLOSED_EYES = EMOJIS.register(
       "smiling_face_with_closed_eyes",
-      () -> new Item(new Item.Properties()));
+      () -> new SmilingFaceWithClosedEyesItem(new Item.Properties()));
 
   public static RegistryObject<Item> KISSING_FACE_WITH_CLOSED_EYES = EMOJIS.register(
       "kissing_face_with_closed_eyes",
-      () -> new Item(new Item.Properties()));
+      () -> new KissingFaceWithClosedEyesItem(new Item.Properties()));
 
   public static RegistryObject<Item> KISSING_FACE_WITH_SMILING_EYES = EMOJIS.register(
       "kissing_face_with_smiling_eyes",
-      () -> new Item(new Item.Properties()));
+      () -> new KissingFaceWithSmilingEyesItem(new Item.Properties()));
 
   public static RegistryObject<Item> SMIRKING_FACE = EMOJIS.register(
       "smirking_face",
-      () -> new Item(new Item.Properties()));
+      () -> new SmirkingFaceItem(new Item.Properties()));
 
   /**
    * Register the DeferredRegister to the event bus.

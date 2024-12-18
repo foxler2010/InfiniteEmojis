@@ -1,7 +1,10 @@
 {
   "creativetab.infinite_emojis_tab": "Infinite Emojis",
+
   "item.infiniteemojis.metal_detector": "Metal Detector",
+
   "item.infiniteemojis.face": "Face",
+
   "item.infiniteemojis.eyes": "Eyes",
   "item.infiniteemojis.big_eyes": "Big Eyes",
   "item.infiniteemojis.smiling_eyes": "Smiling Eyes",
@@ -16,6 +19,7 @@
   "item.infiniteemojis.big_eyebrows_up_eyes": "Big Eyebrows-Up Eyes",
   "item.infiniteemojis.glaring_eyes": "Glaring Eyes",
   "item.infiniteemojis.thinking_eyes": "Thinking Eyes",
+
   "item.infiniteemojis.smile": "Smile",
   "item.infiniteemojis.beaming_smile": "Beaming Smile",
   "item.infiniteemojis.slight_smile": "Slight Smile",
@@ -30,6 +34,7 @@
   "item.infiniteemojis.drooling_mouth": "Drooling Mouth",
   "item.infiniteemojis.party_mouth": "Party Mouth",
   "item.infiniteemojis.buck_toothed_mouth": "Buck Toothed Mouth",
+
   "item.infiniteemojis.grinning_face": "Grinning Face",
   "item.infiniteemojis.grinning_face_with_big_eyes": "Grinning Face with Big Eyes",
   "item.infiniteemojis.grinning_face_with_smiling_eyes": "Grinning Face with Smiling Eyes",
@@ -45,6 +50,9 @@
   "item.infiniteemojis.smiling_face_with_closed_eyes": "Smiling Face with Closed Eyes",
   "item.infiniteemojis.kissing_face_with_closed_eyes": "Kissing Face with Closed Eyes",
   "item.infiniteemojis.kissing_face_with_smiling_eyes": "Kissing face with Smiling Eyes",
-  "item.infiniteemojis.smirking_face": "Smirking Face"
+  "item.infiniteemojis.smirking_face": "Smirking Face",
+
+  "tooltip.infiniteemojis.metal_detector.tooltip": "Finds valuables underground!",
+  "tooltip.infiniteemojis.emoji_item.ingredients": "Ingredients:"
 
 }

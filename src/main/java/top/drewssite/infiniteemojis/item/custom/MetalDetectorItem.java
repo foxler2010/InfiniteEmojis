@@ -4,6 +4,8 @@
 
 package top.drewssite.infiniteemojis.item.custom;
 
+import java.util.List;
+import net.minecraft.ChatFormatting;
 import net.minecraft.client.resources.language.I18n;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -12,6 +14,8 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
@@ -88,6 +92,31 @@ public class MetalDetectorItem extends Item {
     context.getItemInHand().hurtAndBreak(1, context.getPlayer(), slot);
 
     return InteractionResult.SUCCESS;
+
+  }
+
+  /**
+   * Adds a tooltip that shows when hovering over the item in the inventory.
+   *
+   * @param stack The stack being hovered over.
+   * @param context ToolTipContext
+   * @param tooltipComponents Components pointing to the actual text that gets displayed.
+   *                          This method overrides the super and
+   *                          modifies the Components from the default.
+   * @param tooltipFlag TooltipFlag
+   */
+  @Override
+  public void appendHoverText(
+      ItemStack stack,
+      TooltipContext context,
+      List<Component> tooltipComponents,
+      TooltipFlag tooltipFlag) {
+
+    tooltipComponents.add(
+        Component.translatable("tooltip.infiniteemojis.metal_detector.tooltip")
+            .withStyle(ChatFormatting.GRAY));
+
+    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
 
   }
 
