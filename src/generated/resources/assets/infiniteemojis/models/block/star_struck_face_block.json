@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "infiniteemojis:block/star_struck_face_block"
+  }
+}

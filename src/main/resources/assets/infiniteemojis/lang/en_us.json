@@ -52,6 +52,23 @@
   "item.infiniteemojis.kissing_face_with_smiling_eyes": "Kissing face with Smiling Eyes",
   "item.infiniteemojis.smirking_face": "Smirking Face",
 
+  "block.infiniteemojis.grinning_face_block": "Grinning Face Block",
+  "block.infiniteemojis.grinning_face_with_big_eyes_block": "Grinning Face with Big Eyes Block",
+  "block.infiniteemojis.grinning_face_with_smiling_eyes_block": "Grinning Face with Smiling Eyes Block",
+  "block.infiniteemojis.beaming_face_block": "Beaming Face Block",
+  "block.infiniteemojis.grinning_squinting_face_block": "Grinning Squinting Face Block",
+  "block.infiniteemojis.slightly_smiling_face_block": "Slightly Smiling Face Block",
+  "block.infiniteemojis.winking_face_block": "Winking Face Block",
+  "block.infiniteemojis.smiling_face_with_smiling_eyes_block": "Smiling Face with Smiling Eyes Block",
+  "block.infiniteemojis.heart_eyed_face_block": "Heart-eyed Face Block",
+  "block.infiniteemojis.star_struck_face_block": "Star-struck Face Block",
+  "block.infiniteemojis.face_blowing_a_kiss_block": "Face Blowing a Kiss Block",
+  "block.infiniteemojis.kissing_face_block": "Kissing Face Block",
+  "block.infiniteemojis.smiling_face_with_closed_eyes_block": "Smiling Face with Closed Eyes Block",
+  "block.infiniteemojis.kissing_face_with_closed_eyes_block": "Kissing Face with Closed Eyes Block",
+  "block.infiniteemojis.kissing_face_with_smiling_eyes_block": "Kissing face with Smiling Eyes Block",
+  "block.infiniteemojis.smirking_face_block": "Smirking Face Block",
+
   "tooltip.infiniteemojis.metal_detector.tooltip": "Finds valuables underground!",
   "tooltip.infiniteemojis.emoji_item.ingredients": "Ingredients:"
 

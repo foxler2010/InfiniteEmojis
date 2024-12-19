@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "infiniteemojis:face_blowing_a_kiss_block"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "infiniteemojis:blocks/face_blowing_a_kiss_block"
+}

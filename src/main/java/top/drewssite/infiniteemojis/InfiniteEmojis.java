@@ -50,6 +50,7 @@ public class InfiniteEmojis {
     EyeItems.register(modEventBus);
     MouthItems.register(modEventBus);
     EmojiItems.register(modEventBus);
+    EmojiBlocks.register(modEventBus);
 
     // Register ourselves for server and other game events we are interested in
     // This is different from the mod event bus, this bus' scope is the whole game

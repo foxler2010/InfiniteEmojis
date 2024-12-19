@@ -29,6 +29,7 @@ import top.drewssite.infiniteemojis.item.MouthItems;
  */
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
 
+  // TODO create this list automatically
   private static final List<ItemLike> EYES = List.of(
       EyeItems.EYES.get(),
       EyeItems.BIG_EYES.get(),

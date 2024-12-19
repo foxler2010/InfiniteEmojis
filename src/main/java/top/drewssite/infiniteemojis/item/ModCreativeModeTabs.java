@@ -72,6 +72,23 @@ public class ModCreativeModeTabs {
             output.accept(EmojiItems.KISSING_FACE_WITH_CLOSED_EYES.get());
             output.accept(EmojiItems.KISSING_FACE_WITH_SMILING_EYES.get());
             output.accept(EmojiItems.SMIRKING_FACE.get());
+            // Emoji Blocks
+            output.accept(EmojiBlocks.GRINNING_FACE_BLOCK.get());
+            output.accept(EmojiBlocks.GRINNING_FACE_WITH_BIG_EYES_BLOCK.get());
+            output.accept(EmojiBlocks.GRINNING_FACE_WITH_SMILING_EYES_BLOCK.get());
+            output.accept(EmojiBlocks.BEAMING_FACE_BLOCK.get());
+            output.accept(EmojiBlocks.GRINNING_SQUINTING_FACE_BLOCK.get());
+            output.accept(EmojiBlocks.SLIGHTLY_SMILING_FACE_BLOCK.get());
+            output.accept(EmojiBlocks.WINKING_FACE_BLOCK.get());
+            output.accept(EmojiBlocks.SMILING_FACE_WITH_SMILING_EYES_BLOCK.get());
+            output.accept(EmojiBlocks.HEART_EYED_FACE_BLOCK.get());
+            output.accept(EmojiBlocks.STAR_STRUCK_FACE_BLOCK.get());
+            output.accept(EmojiBlocks.FACE_BLOWING_A_KISS_BLOCK.get());
+            output.accept(EmojiBlocks.KISSING_FACE_BLOCK.get());
+            output.accept(EmojiBlocks.SMILING_FACE_WITH_CLOSED_EYES_BLOCK.get());
+            output.accept(EmojiBlocks.KISSING_FACE_WITH_CLOSED_EYES_BLOCK.get());
+            output.accept(EmojiBlocks.KISSING_FACE_WITH_SMILING_EYES_BLOCK.get());
+            output.accept(EmojiBlocks.SMIRKING_FACE_BLOCK.get());
             // Metal detector
             output.accept(ModItems.METAL_DETECTOR.get());
           })
