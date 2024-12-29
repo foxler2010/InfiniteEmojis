@@ -10,7 +10,8 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.Nullable;
 import top.drewssite.infiniteemojis.InfiniteEmojis;
-import top.drewssite.infiniteemojis.item.EmojiBlocks;
+import top.drewssite.infiniteemojis.block.EmojiBlocks;
+import top.drewssite.infiniteemojis.block.ModBlocks;
 
 /**
  * Provider of block tags for blocks added by the mod.
@@ -50,6 +51,15 @@ public class ModBlockTagProvider extends BlockTagsProvider {
       mineableWithPickaxe.add(block.get());
 
     }
+
+    this.tag(BlockTags.LOGS_THAT_BURN)
+        .add(ModBlocks.EMO_LOG.get())
+        .add(ModBlocks.EMO_WOOD.get())
+        .add(ModBlocks.STRIPPED_EMO_LOG.get())
+        .add(ModBlocks.STRIPPED_EMO_WOOD.get());
+
+    this.tag(BlockTags.PLANKS)
+        .add(ModBlocks.EMO_PLANKS.get());
 
   }
 

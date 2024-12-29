@@ -13,19 +13,19 @@ import top.drewssite.infiniteemojis.item.custom.MetalDetectorItem;
  */
 public class ModItems {
 
-  /*
-   * Register for items added by the mod
+  /**
+   * Register for items added by the mod.
    */
   public static final DeferredRegister<Item> ITEMS =
       DeferredRegister.create(ForgeRegistries.ITEMS, InfiniteEmojis.MOD_ID);
 
-  /*
-   * Basic face item, used for building all emojis
+  /**
+   * Basic face item, used for building all emojis.
    */
   public static final RegistryObject<Item> FACE = ITEMS.register("face",
       () -> new Item(new Item.Properties()));
 
-  /*
+  /**
    * Metal detector, learned how to make advanced/custom items by making it.
    */
   public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",

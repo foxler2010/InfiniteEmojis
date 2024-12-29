@@ -4,9 +4,11 @@ import java.util.Set;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.NotNull;
-import top.drewssite.infiniteemojis.item.EmojiBlocks;
+import top.drewssite.infiniteemojis.block.EmojiBlocks;
+import top.drewssite.infiniteemojis.block.ModBlocks;
 
 /**
  * ModBlockLootTables.
@@ -32,7 +34,18 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     }
 
-    // there are no other types of blocks currently
+    this.dropSelf(ModBlocks.EMO_LOG.get());
+    this.dropSelf(ModBlocks.EMO_WOOD.get());
+    this.dropSelf(ModBlocks.STRIPPED_EMO_LOG.get());
+    this.dropSelf(ModBlocks.STRIPPED_EMO_WOOD.get());
+    this.dropSelf(ModBlocks.EMO_PLANKS.get());
+
+    this.add(
+        ModBlocks.EMO_LEAVES.get(),
+        block -> createLeavesDrops(
+            block,
+            ModBlocks.EMO_LEAVES.get(), // TODO change to sapling
+            NORMAL_LEAVES_SAPLING_CHANCES));
 
   }
 

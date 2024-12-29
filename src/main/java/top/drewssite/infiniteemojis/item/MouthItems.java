@@ -12,8 +12,8 @@ import top.drewssite.infiniteemojis.InfiniteEmojis;
  */
 public class MouthItems {
 
-  /*
-   * Register for eye-type items added by the mod
+  /**
+   * Register for eye-type items added by the mod.
    */
   public static final DeferredRegister<Item> MOUTH_ITEMS =
       DeferredRegister.create(ForgeRegistries.ITEMS, InfiniteEmojis.MOD_ID);

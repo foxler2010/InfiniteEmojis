@@ -15,8 +15,8 @@ import top.drewssite.infiniteemojis.item.custom.*;
  */
 public class EmojiItems {
 
-  /*
-   * Register for emoji items added by the mod
+  /**
+   * Register for emoji items added by the mod.
    */
   public static DeferredRegister<Item> EMOJI_ITEMS = DeferredRegister.create(
       ForgeRegistries.ITEMS,

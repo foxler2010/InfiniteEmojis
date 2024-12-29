@@ -20,6 +20,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import top.drewssite.infiniteemojis.block.EmojiBlocks;
+import top.drewssite.infiniteemojis.block.ModBlocks;
 import top.drewssite.infiniteemojis.item.*;
 
 /**
@@ -47,6 +49,7 @@ public class InfiniteEmojis {
     // My registers
     ModCreativeModeTabs.register(modEventBus);
     ModItems.register(modEventBus);
+    ModBlocks.register(modEventBus);
     EyeItems.register(modEventBus);
     MouthItems.register(modEventBus);
     EmojiItems.register(modEventBus);

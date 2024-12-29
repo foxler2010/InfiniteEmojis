@@ -4,7 +4,9 @@ import java.util.concurrent.CompletableFuture;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
+import top.drewssite.infiniteemojis.block.ModBlocks;
 
 /**
  * Provider of item tags for blocks added by the mod.
@@ -35,7 +37,14 @@ public class ModItemTagsProvider extends ItemTagsProvider {
   @Override
   protected void addTags(HolderLookup.Provider provider) {
 
-    // nothing here, yet...
+    this.tag(ItemTags.LOGS_THAT_BURN)
+        .add(ModBlocks.EMO_LOG.get().asItem())
+        .add(ModBlocks.EMO_WOOD.get().asItem())
+        .add(ModBlocks.STRIPPED_EMO_LOG.get().asItem())
+        .add(ModBlocks.STRIPPED_EMO_WOOD.get().asItem());
+
+    this.tag(ItemTags.PLANKS)
+        .add(ModBlocks.EMO_PLANKS.get().asItem());
 
   }
 

@@ -1,4 +1,4 @@
-package top.drewssite.infiniteemojis.item;
+package top.drewssite.infiniteemojis.block;
 
 import java.util.function.Supplier;
 import net.minecraft.world.item.BlockItem;
@@ -11,14 +11,17 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import top.drewssite.infiniteemojis.InfiniteEmojis;
+import top.drewssite.infiniteemojis.item.ModItems;
 
 /**
- * General items added by the mod.
+ * Emoji blocks added by the mod.
+ * Each of these blocks correspond to an emoji
+ * registered in top.drewssite.infiniteemojis.item.EmojiItems
  */
 public class EmojiBlocks {
 
-  /*
-   * Register for emoji blocks added by the mod
+  /**
+   * Register for emoji blocks added by the mod.
    */
   public static final DeferredRegister<Block> EMOJI_BLOCKS =
       DeferredRegister.create(ForgeRegistries.BLOCKS, InfiniteEmojis.MOD_ID);
@@ -87,6 +90,13 @@ public class EmojiBlocks {
       "smirking_face_block",
       () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
+  /**
+   * Helper method that registers the Block and BlockItem in one call.
+   *
+   * @param name Name of the item (machine-readable)
+   * @param block Supplier of Block to use
+   * @return RegistryObject<Block> of the Block registered by the method.
+   */
   private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
 
     RegistryObject<T> toReturn = EMOJI_BLOCKS.register(name, block);
@@ -95,6 +105,13 @@ public class EmojiBlocks {
 
   }
 
+  /**
+   * Helper method that creates a basic BlockItem for the passed in Block
+   *
+   * @param name Name of the BlockItem. Should be the same as its associated Block.
+   * @param block Block to use create the BlockItem off of.
+   * @return RegistryObject<Item> for the created BlockItem.
+   */
   @SuppressWarnings({"CheckStyle", "UnusedReturnValue"})
   private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
 
