@@ -39,14 +39,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
     // create a simple block with identical sides for each Emoji block
     for (RegistryObject<Block> block : EmojiBlocks.EMOJI_BLOCKS.getEntries()) {
 
-      blockWithItem(block);
+      modCubeBlock(block);
 
     }
 
     // BlockState for EMO_LOG
     logBlock((RotatedPillarBlock) ModBlocks.EMO_LOG.get());
     // BlockItem for EMO_LOG
-    blockItem(ModBlocks.EMO_LOG);
+    modBlockItem(ModBlocks.EMO_LOG);
 
     // BlockState for EMO_WOOD
     axisBlock(
@@ -55,7 +55,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockTexture(ModBlocks.EMO_LOG.get()),
         blockTexture(ModBlocks.EMO_LOG.get()));
     // BlockItem for EMO_WOOD
-    blockItem(ModBlocks.EMO_WOOD);
+    modBlockItem(ModBlocks.EMO_WOOD);
 
     // BlockState for STRIPPED_EMO_LOG
     axisBlock(
@@ -67,7 +67,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
             InfiniteEmojis.MOD_ID,
             "block/stripped_emo_log_top"));
     // BlockItem for STRIPPED_EMO_LOG
-    blockItem(ModBlocks.STRIPPED_EMO_LOG);
+    modBlockItem(ModBlocks.STRIPPED_EMO_LOG);
 
     // BlockState for STRIPPED_EMO_WOOD
     axisBlock(
@@ -76,10 +76,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockTexture(ModBlocks.STRIPPED_EMO_LOG.get()),
         blockTexture(ModBlocks.STRIPPED_EMO_LOG.get()));
     // BlockItem for STRIPPED_EMO_WOOD
-    blockItem(ModBlocks.STRIPPED_EMO_WOOD);
+    modBlockItem(ModBlocks.STRIPPED_EMO_WOOD);
 
-    //BlockState & BlockItem for EMO_PLANKS
-    blockWithItem(ModBlocks.EMO_PLANKS);
+    // BlockState & BlockItem for EMO_PLANKS
+    modCubeBlock(ModBlocks.EMO_PLANKS);
+
+    // BlockState & BlockItem foe EMO_LEAVES
+    leavesBlock(ModBlocks.EMO_LEAVES);
 
   }
 
@@ -102,7 +105,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
    *
    * @param blockRegistryObject RegistryObject to create the BlockItem model from.
    */
-  private void blockItem(RegistryObject<Block> blockRegistryObject) {
+  private void modBlockItem(RegistryObject<Block> blockRegistryObject) {
 
     simpleBlockItem(
         blockRegistryObject.get(),
@@ -119,7 +122,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
    * @param blockRegistryObject RegistryObject of Block to create BlockState
    *                            and BlockItem model for.
    */
-  private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
+  private void modCubeBlock(RegistryObject<Block> blockRegistryObject) {
 
     simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
 

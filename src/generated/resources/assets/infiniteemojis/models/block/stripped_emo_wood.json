@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "infiniteemojis:block/stripped_emo_log",
+    "side": "infiniteemojis:block/stripped_emo_log"
+  }
+}

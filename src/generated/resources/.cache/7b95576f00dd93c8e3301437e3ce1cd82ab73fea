@@ -1,3 +1,5 @@
-// 1.20.6	2024-12-18T19:41:41.3540416	Tags for minecraft:block mod id infiniteemojis
+// 1.20.6	2024-12-31T14:08:11.9660402	Tags for minecraft:block mod id infiniteemojis
+5970dc514de43ce3934b8c8df73d1f6786107729 data/minecraft/tags/blocks/logs_that_burn.json
 71699185d4ea28d01fb178b0f9f238289338bad1 data/minecraft/tags/blocks/mineable/pickaxe.json
 71699185d4ea28d01fb178b0f9f238289338bad1 data/minecraft/tags/blocks/needs_stone_tool.json
+a34dcd83be027dbb323d11293b3d4f7070cb34dd data/minecraft/tags/blocks/planks.json

@@ -1,5 +1,9 @@
-// 1.20.6	2024-12-18T19:41:41.3600347	Loot Tables
+// 1.20.6	2024-12-31T15:05:28.2731529	Loot Tables
 36cbd7c3a5b64156b1453e4a434f980681099601 data/infiniteemojis/loot_tables/blocks/beaming_face_block.json
+79ee10353b8eddc4d5039e23a64f119ce476fc2b data/infiniteemojis/loot_tables/blocks/emo_leaves.json
+416082fa56733b6ecfee9e9f1af8db1e85779a13 data/infiniteemojis/loot_tables/blocks/emo_log.json
+6304504dd8c86d0c8426ab516ed810f5e8b7b26b data/infiniteemojis/loot_tables/blocks/emo_planks.json
+3e571072b6a0e9d720c26528a28f7a98379adf38 data/infiniteemojis/loot_tables/blocks/emo_wood.json
 5758f77ecd9624468f6e53997eb888af0a70af18 data/infiniteemojis/loot_tables/blocks/face_blowing_a_kiss_block.json
 392da9ca4cd88a0bb641b8a008bb51be510a1168 data/infiniteemojis/loot_tables/blocks/grinning_face_block.json
 e03588bc1cacf91cf54f0eb7574e4c857cd076ff data/infiniteemojis/loot_tables/blocks/grinning_face_with_big_eyes_block.json
@@ -14,4 +18,6 @@ f72a4ba4016938c1d34b6f7a7bbd387a5287a28e data/infiniteemojis/loot_tables/blocks/
 7926bff5e172257755e9e19057b6e40935aa1f5c data/infiniteemojis/loot_tables/blocks/smiling_face_with_smiling_eyes_block.json
 1a4b900dc05289eee698f1ae94ef857668f05397 data/infiniteemojis/loot_tables/blocks/smirking_face_block.json
 377d829a1cc9db06c53e90967531aa937c4d53e7 data/infiniteemojis/loot_tables/blocks/star_struck_face_block.json
+1b931057d628579318ebefb3474f350cadfb6f01 data/infiniteemojis/loot_tables/blocks/stripped_emo_log.json
+a081ecf0f5696c732d9b882eb8ae299c9213952d data/infiniteemojis/loot_tables/blocks/stripped_emo_wood.json
 f7f232177e139d88e07cdf5b04790077733c78bb data/infiniteemojis/loot_tables/blocks/winking_face_block.json

@@ -1,5 +1,6 @@
 package top.drewssite.infiniteemojis.block;
 
+import java.util.function.Supplier;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.BlockItem;
@@ -18,8 +19,6 @@ import top.drewssite.infiniteemojis.InfiniteEmojis;
 import top.drewssite.infiniteemojis.block.custom.ModFlammableRotatedPillarBlock;
 import top.drewssite.infiniteemojis.item.ModItems;
 
-import java.util.function.Supplier;
-
 /**
  * General blocks added by the mod.
  */
@@ -35,33 +34,29 @@ public class ModBlocks {
       "emo_log",
       () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties
           .ofFullCopy(Blocks.OAK_LOG)
-          .strength(3f)
-          .noLootTable())); // TODO remove
+          .strength(3f)));
 
   public static RegistryObject<Block> EMO_WOOD = registerBlock(
       "emo_wood",
       () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties
           .ofFullCopy(Blocks.OAK_WOOD)
-          .strength(3f)
-          .noLootTable())); // TODO remove
+          .strength(3f)));
 
   public static RegistryObject<Block> STRIPPED_EMO_LOG = registerBlock(
       "stripped_emo_log",
       () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties
           .ofFullCopy(Blocks.STRIPPED_OAK_LOG)
-          .strength(3f)
-          .noLootTable())); // TODO remove
+          .strength(3f)));
 
   public static RegistryObject<Block> STRIPPED_EMO_WOOD = registerBlock(
       "stripped_emo_wood",
       () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties
           .ofFullCopy(Blocks.STRIPPED_OAK_WOOD)
-          .strength(3f)
-          .noLootTable())); // TODO remove
+          .strength(3f)));
 
   public static RegistryObject<Block> EMO_PLANKS = registerBlock(
       "emo_planks",
-      () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).noLootTable()) { // TODO remove noLootTable()
+      () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)) {
 
         /*
          * Anonymous class
@@ -104,7 +99,7 @@ public class ModBlocks {
 
   public static RegistryObject<Block> EMO_LEAVES = registerBlock(
       "emo_leaves",
-      () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES).noLootTable()) { // TODO remove noLootTable()
+      () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)) {
 
         /*
          * Anonymous class
@@ -170,8 +165,7 @@ public class ModBlocks {
   @SuppressWarnings({"CheckStyle", "UnusedReturnValue"})
   private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
 
-    return ModItems.ITEMS.register(name + "_blockitem",
-        () -> new BlockItem(block.get(), new Item.Properties()));
+    return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
 
   }
 

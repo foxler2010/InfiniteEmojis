@@ -7,6 +7,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
+import top.drewssite.infiniteemojis.datagen.loot.EmojiBlockLootTables;
 import top.drewssite.infiniteemojis.datagen.loot.ModBlockLootTables;
 
 /**
@@ -30,6 +31,9 @@ public class ModLootTableProvider {
         output,
         Set.of(),
         List.of(
+            new LootTableProvider.SubProviderEntry(
+                EmojiBlockLootTables::new,
+                LootContextParamSets.BLOCK),
             new LootTableProvider.SubProviderEntry(
                 ModBlockLootTables::new,
                 LootContextParamSets.BLOCK)),

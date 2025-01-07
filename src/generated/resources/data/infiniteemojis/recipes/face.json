@@ -2,17 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "S": {
-      "item": "minecraft:stick"
+    "#": {
+      "item": "infiniteemojis:emo_planks"
     }
   },
   "pattern": [
-    "SSS",
-    "SSS",
-    "SSS"
+    "###",
+    "###",
+    "###"
   ],
   "result": {
-    "count": 1,
+    "count": 9,
     "id": "infiniteemojis:face"
   }
 }

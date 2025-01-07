@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_emo_planks": {
+    "has_emo_log": {
       "conditions": {
         "items": [
           {
-            "items": "infiniteemojis:emo_planks"
+            "items": "infiniteemojis:emo_log"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "infiniteemojis:face"
+        "recipe": "infiniteemojis:emo_planks_from_stripped_log"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_emo_planks"
+      "has_emo_log"
     ]
   ],
   "rewards": {
     "recipes": [
-      "infiniteemojis:face"
+      "infiniteemojis:emo_planks_from_stripped_log"
     ]
   }
 }

@@ -4,14 +4,13 @@ import java.util.Set;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.NotNull;
-import top.drewssite.infiniteemojis.block.EmojiBlocks;
 import top.drewssite.infiniteemojis.block.ModBlocks;
 
+
 /**
- * ModBlockLootTables.
+ * Loot tables for all ModBlocks.
  */
 public class ModBlockLootTables extends BlockLootSubProvider {
 
@@ -20,19 +19,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
    */
   public ModBlockLootTables() {
 
-    super(Set.of(), FeatureFlags.REGISTRY.allFlags());
+    super(Set.of(), FeatureFlags.DEFAULT_FLAGS);
 
   }
 
   @Override
   protected void generate() {
-
-    // All Emoji blocks drop themselves
-    for (RegistryObject<Block> block : EmojiBlocks.EMOJI_BLOCKS.getEntries()) {
-
-      this.dropSelf(block.get());
-
-    }
 
     this.dropSelf(ModBlocks.EMO_LOG.get());
     this.dropSelf(ModBlocks.EMO_WOOD.get());
@@ -52,7 +44,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
   @Override
   protected @NotNull Iterable<Block> getKnownBlocks() {
 
-    return EmojiBlocks.EMOJI_BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
+    return ModBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
 
   }
 

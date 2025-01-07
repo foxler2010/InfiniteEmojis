@@ -43,6 +43,9 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         .add(ModBlocks.STRIPPED_EMO_LOG.get().asItem())
         .add(ModBlocks.STRIPPED_EMO_WOOD.get().asItem());
 
+    // This tag allows planks to be used to craft
+    // all non-wood-specific items
+    // (sticks, crafting tables, chests, etc.)
     this.tag(ItemTags.PLANKS)
         .add(ModBlocks.EMO_PLANKS.get().asItem());
 

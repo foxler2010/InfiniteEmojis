@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "infiniteemojis:stripped_emo_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "infiniteemojis:emo_planks"
+  }
+}
