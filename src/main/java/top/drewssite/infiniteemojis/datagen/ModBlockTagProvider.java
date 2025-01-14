@@ -65,7 +65,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         .add(ModBlocks.STRIPPED_EMO_WOOD.get());
 
     // this tag makes the destroy time the same as
-    // regular wood blocks, and
+    // regular wood blocks, and have it vary with tool tier.
     this.tag(BlockTags.MINEABLE_WITH_AXE)
         .add(ModBlocks.EMO_LOG.get())
         .add(ModBlocks.EMO_WOOD.get())
