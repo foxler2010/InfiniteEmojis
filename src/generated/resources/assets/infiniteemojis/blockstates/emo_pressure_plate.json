@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "infiniteemojis:block/emo_pressure_plate"
+    },
+    "powered=true": {
+      "model": "infiniteemojis:block/emo_pressure_plate_down"
+    }
+  }
+}

@@ -2,8 +2,7 @@ package top.drewssite.infiniteemojis.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -81,7 +80,63 @@ public class ModBlockStateProvider extends BlockStateProvider {
     // BlockState & BlockItem for EMO_PLANKS
     modCubeBlock(ModBlocks.EMO_PLANKS);
 
-    // BlockState & BlockItem foe EMO_LEAVES
+    // BlockState for EMO_STAIRS
+    stairsBlock(
+        (StairBlock) ModBlocks.EMO_STAIRS.get(),
+        blockTexture(ModBlocks.EMO_PLANKS.get()));
+    // BlockItem for EMO_STAIRS
+    modBlockItem(ModBlocks.EMO_STAIRS);
+
+    // BlockState for EMO_SLAB
+    slabBlock(
+        (SlabBlock) ModBlocks.EMO_SLAB.get(),
+        blockTexture(ModBlocks.EMO_PLANKS.get()),
+        blockTexture(ModBlocks.EMO_PLANKS.get()));
+    // BlockItem for EMO_SLAB
+    modBlockItem(ModBlocks.EMO_SLAB);
+
+    // BlockState for EMO_BUTTON
+    buttonBlock(
+        (ButtonBlock) ModBlocks.EMO_BUTTON.get(),
+        blockTexture(ModBlocks.EMO_PLANKS.get()));
+    // BlockItem is created in ModItemModelProvider
+
+    // BlockState for EMO_PRESSURE_PLATE
+    pressurePlateBlock(
+        (PressurePlateBlock) ModBlocks.EMO_PRESSURE_PLATE.get(),
+        blockTexture(ModBlocks.EMO_PLANKS.get()));
+    // BlockItem for EMO_PRESSURE_PLATE
+    modBlockItem(ModBlocks.EMO_PRESSURE_PLATE);
+
+    // BlockState for EMO_FENCE
+    fenceBlock(
+        (FenceBlock) ModBlocks.EMO_FENCE.get(),
+        blockTexture(ModBlocks.EMO_PLANKS.get()));
+    // BlockItem is created in ModItemModelProvider
+
+    // BlockState for EMO_FENCE_GATE
+    fenceGateBlock(
+        (FenceGateBlock) ModBlocks.EMO_FENCE_GATE.get(),
+        blockTexture(ModBlocks.EMO_PLANKS.get()));
+    // BlockItem for EMO_FENCE_GATE
+    modBlockItem(ModBlocks.EMO_FENCE_GATE);
+
+    // BlockState for EMO_DOOR
+    doorBlockWithRenderType(
+        (DoorBlock) ModBlocks.EMO_DOOR.get(),
+        modLoc("block/emo_door_bottom"),
+        modLoc("block/emo_door_top"),
+        "cutout");
+    // BlockItem is created in ModItemModelProvider
+
+    // BlockState for EMO_TRAPDOOR
+    trapdoorBlockWithRenderType(
+        (TrapDoorBlock) ModBlocks.EMO_TRAPDOOR.get(),
+        modLoc("block/emo_trapdoor"),
+        true,
+        "cutout");
+
+    // BlockState & BlockItem for EMO_LEAVES
     leavesBlock(ModBlocks.EMO_LEAVES);
 
   }

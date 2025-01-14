@@ -30,63 +30,63 @@ public class EmojiBlocks {
       "grinning_face_block",
       () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
-  public static RegistryObject<Block> GRINNING_FACE_WITH_BIG_EYES_BLOCK = registerBlock(
+  public static final RegistryObject<Block> GRINNING_FACE_WITH_BIG_EYES_BLOCK = registerBlock(
       "grinning_face_with_big_eyes_block",
       () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
-  public static RegistryObject<Block> GRINNING_FACE_WITH_SMILING_EYES_BLOCK = registerBlock(
+  public static final RegistryObject<Block> GRINNING_FACE_WITH_SMILING_EYES_BLOCK = registerBlock(
       "grinning_face_with_smiling_eyes_block",
       () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
-  public static RegistryObject<Block> BEAMING_FACE_BLOCK = registerBlock(
+  public static final RegistryObject<Block> BEAMING_FACE_BLOCK = registerBlock(
       "beaming_face_block",
       () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
-  public static RegistryObject<Block> GRINNING_SQUINTING_FACE_BLOCK = registerBlock(
+  public static final RegistryObject<Block> GRINNING_SQUINTING_FACE_BLOCK = registerBlock(
       "grinning_squinting_face_block",
       () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
-  public static RegistryObject<Block> SLIGHTLY_SMILING_FACE_BLOCK = registerBlock(
+  public static final RegistryObject<Block> SLIGHTLY_SMILING_FACE_BLOCK = registerBlock(
       "slightly_smiling_face_block",
       () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
-  public static RegistryObject<Block> WINKING_FACE_BLOCK = registerBlock(
+  public static final RegistryObject<Block> WINKING_FACE_BLOCK = registerBlock(
       "winking_face_block",
       () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
-  public static RegistryObject<Block> SMILING_FACE_WITH_SMILING_EYES_BLOCK = registerBlock(
+  public static final RegistryObject<Block> SMILING_FACE_WITH_SMILING_EYES_BLOCK = registerBlock(
       "smiling_face_with_smiling_eyes_block",
       () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
-  public static RegistryObject<Block> HEART_EYED_FACE_BLOCK = registerBlock(
+  public static final RegistryObject<Block> HEART_EYED_FACE_BLOCK = registerBlock(
       "heart_eyed_face_block",
       () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
-  public static RegistryObject<Block> STAR_STRUCK_FACE_BLOCK = registerBlock(
+  public static final RegistryObject<Block> STAR_STRUCK_FACE_BLOCK = registerBlock(
       "star_struck_face_block",
       () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
-  public static RegistryObject<Block> FACE_BLOWING_A_KISS_BLOCK = registerBlock(
+  public static final RegistryObject<Block> FACE_BLOWING_A_KISS_BLOCK = registerBlock(
       "face_blowing_a_kiss_block",
       () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
-  public static RegistryObject<Block> KISSING_FACE_BLOCK = registerBlock(
+  public static final RegistryObject<Block> KISSING_FACE_BLOCK = registerBlock(
       "kissing_face_block",
       () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
-  public static RegistryObject<Block> SMILING_FACE_WITH_CLOSED_EYES_BLOCK = registerBlock(
+  public static final RegistryObject<Block> SMILING_FACE_WITH_CLOSED_EYES_BLOCK = registerBlock(
       "smiling_face_with_closed_eyes_block",
       () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
-  public static RegistryObject<Block> KISSING_FACE_WITH_CLOSED_EYES_BLOCK = registerBlock(
+  public static final RegistryObject<Block> KISSING_FACE_WITH_CLOSED_EYES_BLOCK = registerBlock(
       "kissing_face_with_closed_eyes_block",
       () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
-  public static RegistryObject<Block> KISSING_FACE_WITH_SMILING_EYES_BLOCK = registerBlock(
+  public static final RegistryObject<Block> KISSING_FACE_WITH_SMILING_EYES_BLOCK = registerBlock(
       "kissing_face_with_smiling_eyes_block",
       () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
-  public static RegistryObject<Block> SMIRKING_FACE_BLOCK = registerBlock(
+  public static final RegistryObject<Block> SMIRKING_FACE_BLOCK = registerBlock(
       "smirking_face_block",
       () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 

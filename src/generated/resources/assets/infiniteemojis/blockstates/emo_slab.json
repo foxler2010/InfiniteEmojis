@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "infiniteemojis:block/emo_slab"
+    },
+    "type=double": {
+      "model": "infiniteemojis:block/emo_planks"
+    },
+    "type=top": {
+      "model": "infiniteemojis:block/emo_slab_top"
+    }
+  }
+}

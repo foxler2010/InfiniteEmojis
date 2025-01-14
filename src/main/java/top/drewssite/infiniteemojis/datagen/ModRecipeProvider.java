@@ -11,6 +11,7 @@ import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.BlastingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -262,10 +263,98 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             InfiniteEmojis.MOD_ID + ":emo_planks_from_stripped_wood"));
 
     /*
+     * Emo Stairs from Emo Planks
+     */
+    ShapedRecipeBuilder.shaped(RecipeCategory.MISC,
+            ModBlocks.EMO_STAIRS.get(), 4)
+        .pattern("#  ")
+        .pattern("## ")
+        .pattern("###")
+        .define('#', ModBlocks.EMO_PLANKS.get())
+        .unlockedBy(getHasName(ModBlocks.EMO_PLANKS.get()), has(ModBlocks.EMO_PLANKS.get()))
+        .save(recipeOutput);
+
+    /*
+     * Emo Slab from Emo Planks
+     */
+    ShapedRecipeBuilder.shaped(RecipeCategory.MISC,
+            ModBlocks.EMO_SLAB.get(), 6)
+        .pattern("###")
+        .define('#', ModBlocks.EMO_PLANKS.get())
+        .unlockedBy(getHasName(ModBlocks.EMO_PLANKS.get()), has(ModBlocks.EMO_PLANKS.get()))
+        .save(recipeOutput);
+
+    /*
+     * Emo Button from Emo Planks
+     */
+    ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
+            ModBlocks.EMO_BUTTON.get())
+        .requires(ModBlocks.EMO_PLANKS.get())
+        .unlockedBy(getHasName(ModBlocks.EMO_PLANKS.get()), has(ModBlocks.EMO_PLANKS.get()))
+        .save(recipeOutput);
+
+    /*
+     * Emo Pressure Plate from Emo Planks
+     */
+    ShapedRecipeBuilder.shaped(RecipeCategory.MISC,
+            ModBlocks.EMO_PRESSURE_PLATE.get())
+        .pattern("##")
+        .define('#', ModBlocks.EMO_PLANKS.get())
+        .unlockedBy(getHasName(ModBlocks.EMO_PLANKS.get()), has(ModBlocks.EMO_PLANKS.get()))
+        .save(recipeOutput);
+
+    /*
+     * Emo Fence from Emo Planks and Sticks
+     */
+    ShapedRecipeBuilder.shaped(RecipeCategory.MISC,
+            ModBlocks.EMO_FENCE.get(), 3)
+        .pattern("#/#")
+        .pattern("#/#")
+        .define('#', ModBlocks.EMO_PLANKS.get())
+        .define('/', Items.STICK)
+        .unlockedBy(getHasName(ModBlocks.EMO_PLANKS.get()), has(ModBlocks.EMO_PLANKS.get()))
+        .save(recipeOutput);
+
+    /*
+     * Emo Fence Gate from Emo Planks and Sticks
+     */
+    ShapedRecipeBuilder.shaped(RecipeCategory.MISC,
+            ModBlocks.EMO_FENCE_GATE.get())
+        .pattern("/#/")
+        .pattern("/#/")
+        .define('#', ModBlocks.EMO_PLANKS.get())
+        .define('/', Items.STICK)
+        .unlockedBy(getHasName(ModBlocks.EMO_PLANKS.get()), has(ModBlocks.EMO_PLANKS.get()))
+        .save(recipeOutput);
+
+    /*
+     * Emo Door from Emo Planks
+     */
+    ShapedRecipeBuilder.shaped(RecipeCategory.MISC,
+            ModBlocks.EMO_DOOR.get())
+        .pattern("##")
+        .pattern("##")
+        .pattern("##")
+        .define('#', ModBlocks.EMO_PLANKS.get())
+        .unlockedBy(getHasName(ModBlocks.EMO_PLANKS.get()), has(ModBlocks.EMO_PLANKS.get()))
+        .save(recipeOutput);
+
+    /*
+     * Emo Trapdoor from Emo Planks
+     */
+    ShapedRecipeBuilder.shaped(RecipeCategory.MISC,
+            ModBlocks.EMO_TRAPDOOR.get())
+        .pattern("###")
+        .pattern("###")
+        .define('#', ModBlocks.EMO_PLANKS.get())
+        .unlockedBy(getHasName(ModBlocks.EMO_PLANKS.get()), has(ModBlocks.EMO_PLANKS.get()))
+        .save(recipeOutput);
+
+    /*
      * Face from Emo Planks
      */
     ShapedRecipeBuilder.shaped(RecipeCategory.MISC,
-        ModItems.FACE.get(), 9)
+            ModItems.FACE.get(), 9)
         .pattern("###")
         .pattern("###")
         .pattern("###")

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "infiniteemojis:block/emo_planks"
+  }
+}

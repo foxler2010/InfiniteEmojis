@@ -1,5 +1,23 @@
-// 1.20.6	2024-12-31T14:08:11.9660402	Tags for minecraft:block mod id infiniteemojis
+// 1.20.6	2025-01-13T17:51:34.2593172	Tags for minecraft:block mod id infiniteemojis
+705ef3c120ada71a6327595ccc28e93033f4951e data/minecraft/tags/blocks/buttons.json
+145b1db9160a33716404d7e2e5ab3b5ec4b0fe47 data/minecraft/tags/blocks/doors.json
+bfa586724b3077fd73b6307fafac6c2bd6b42fdc data/minecraft/tags/blocks/fences.json
+34e9c1d1681a924ca7b35e34e13b4ec81dccdef1 data/minecraft/tags/blocks/fence_gates.json
+202fee4406c15cc968c05f86e5ed2d3f3a04cfc5 data/minecraft/tags/blocks/leaves.json
+5970dc514de43ce3934b8c8df73d1f6786107729 data/minecraft/tags/blocks/logs.json
 5970dc514de43ce3934b8c8df73d1f6786107729 data/minecraft/tags/blocks/logs_that_burn.json
+9da24195bcebf6d49f6ebb787cf99c24cb491d01 data/minecraft/tags/blocks/mineable/axe.json
 71699185d4ea28d01fb178b0f9f238289338bad1 data/minecraft/tags/blocks/mineable/pickaxe.json
 71699185d4ea28d01fb178b0f9f238289338bad1 data/minecraft/tags/blocks/needs_stone_tool.json
 a34dcd83be027dbb323d11293b3d4f7070cb34dd data/minecraft/tags/blocks/planks.json
+d26598bd204d99f6c37f172f8ec32b1f6d88bb1b data/minecraft/tags/blocks/pressure_plates.json
+dadfcb96ec7976187c8e6ed7fa1f8f9510f6a2d7 data/minecraft/tags/blocks/slabs.json
+299c0c57a62a9c4d2ddb7ed1a22b7ef145b4c41b data/minecraft/tags/blocks/stairs.json
+e351cc7759942dd9f0cb160812ad31575cb90076 data/minecraft/tags/blocks/trapdoors.json
+705ef3c120ada71a6327595ccc28e93033f4951e data/minecraft/tags/blocks/wooden_buttons.json
+145b1db9160a33716404d7e2e5ab3b5ec4b0fe47 data/minecraft/tags/blocks/wooden_doors.json
+bfa586724b3077fd73b6307fafac6c2bd6b42fdc data/minecraft/tags/blocks/wooden_fences.json
+d26598bd204d99f6c37f172f8ec32b1f6d88bb1b data/minecraft/tags/blocks/wooden_pressure_plates.json
+dadfcb96ec7976187c8e6ed7fa1f8f9510f6a2d7 data/minecraft/tags/blocks/wooden_slabs.json
+299c0c57a62a9c4d2ddb7ed1a22b7ef145b4c41b data/minecraft/tags/blocks/wooden_stairs.json
+e351cc7759942dd9f0cb160812ad31575cb90076 data/minecraft/tags/blocks/wooden_trapdoors.json

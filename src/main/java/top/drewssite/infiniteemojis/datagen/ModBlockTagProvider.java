@@ -52,17 +52,94 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
     }
 
+    this.tag(BlockTags.LOGS)
+        .add(ModBlocks.EMO_LOG.get())
+        .add(ModBlocks.EMO_WOOD.get())
+        .add(ModBlocks.STRIPPED_EMO_LOG.get())
+        .add(ModBlocks.STRIPPED_EMO_WOOD.get());
+    
     this.tag(BlockTags.LOGS_THAT_BURN)
         .add(ModBlocks.EMO_LOG.get())
         .add(ModBlocks.EMO_WOOD.get())
         .add(ModBlocks.STRIPPED_EMO_LOG.get())
         .add(ModBlocks.STRIPPED_EMO_WOOD.get());
 
+    // this tag makes the destroy time the same as
+    // regular wood blocks, and
+    this.tag(BlockTags.MINEABLE_WITH_AXE)
+        .add(ModBlocks.EMO_LOG.get())
+        .add(ModBlocks.EMO_WOOD.get())
+        .add(ModBlocks.STRIPPED_EMO_LOG.get())
+        .add(ModBlocks.STRIPPED_EMO_WOOD.get())
+        .add(ModBlocks.EMO_PLANKS.get())
+        .add(ModBlocks.EMO_STAIRS.get())
+        .add(ModBlocks.EMO_SLAB.get())
+        .add(ModBlocks.EMO_BUTTON.get())
+        .add(ModBlocks.EMO_PRESSURE_PLATE.get())
+        .add(ModBlocks.EMO_FENCE.get())
+        .add(ModBlocks.EMO_FENCE_GATE.get())
+        .add(ModBlocks.EMO_DOOR.get())
+        .add(ModBlocks.EMO_TRAPDOOR.get());
+
     // This tag allows planks to be used to craft
     // all non-wood-specific items
     // (sticks, crafting tables, chests, etc.)
     this.tag(BlockTags.PLANKS)
         .add(ModBlocks.EMO_PLANKS.get());
+
+    /*
+     * All other applicable tags (based on name) from BlockTags
+     */
+
+    this.tag(BlockTags.STAIRS)
+        .add(ModBlocks.EMO_STAIRS.get());
+
+    this.tag(BlockTags.WOODEN_STAIRS)
+        .add(ModBlocks.EMO_STAIRS.get());
+
+    this.tag(BlockTags.SLABS)
+        .add(ModBlocks.EMO_SLAB.get());
+
+    this.tag(BlockTags.WOODEN_SLABS)
+        .add(ModBlocks.EMO_SLAB.get());
+
+    // Ensures fences connect to each other.
+    this.tag(BlockTags.FENCES)
+        .add(ModBlocks.EMO_FENCE.get());
+
+    this.tag(BlockTags.WOODEN_FENCES)
+        .add(ModBlocks.EMO_FENCE.get());
+
+    // Ensures fence gates connect to each other.
+    this.tag(BlockTags.FENCE_GATES)
+        .add(ModBlocks.EMO_FENCE_GATE.get());
+
+    this.tag(BlockTags.BUTTONS)
+        .add(ModBlocks.EMO_BUTTON.get());
+
+    this.tag(BlockTags.WOODEN_BUTTONS)
+        .add(ModBlocks.EMO_BUTTON.get());
+
+    this.tag(BlockTags.PRESSURE_PLATES)
+        .add(ModBlocks.EMO_PRESSURE_PLATE.get());
+
+    this.tag(BlockTags.WOODEN_PRESSURE_PLATES)
+        .add(ModBlocks.EMO_PRESSURE_PLATE.get());
+
+    this.tag(BlockTags.DOORS)
+        .add(ModBlocks.EMO_DOOR.get());
+
+    this.tag(BlockTags.WOODEN_DOORS)
+        .add(ModBlocks.EMO_DOOR.get());
+
+    this.tag(BlockTags.TRAPDOORS)
+        .add(ModBlocks.EMO_TRAPDOOR.get());
+
+    this.tag(BlockTags.WOODEN_TRAPDOORS)
+        .add(ModBlocks.EMO_TRAPDOOR.get());
+
+    this.tag(BlockTags.LEAVES)
+        .add(ModBlocks.EMO_LEAVES.get());
 
   }
 

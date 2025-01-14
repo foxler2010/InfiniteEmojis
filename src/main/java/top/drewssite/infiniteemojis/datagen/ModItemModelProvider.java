@@ -4,11 +4,13 @@ import com.google.errorprone.annotations.CanIgnoreReturnValue;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 import top.drewssite.infiniteemojis.InfiniteEmojis;
+import top.drewssite.infiniteemojis.block.ModBlocks;
 import top.drewssite.infiniteemojis.item.EmojiItems;
 import top.drewssite.infiniteemojis.item.EyeItems;
 import top.drewssite.infiniteemojis.item.ModItems;
@@ -62,6 +64,13 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     }
 
+    // 1.20.6 allows to use these methods to create item models.
+    fenceInventory("emo_fence", modLoc("block/emo_planks"));
+    buttonInventory("emo_button", modLoc("block/emo_planks"));
+    trapdoorBottom("emo_trapdoor", modLoc("block/emo_trapdoor"));
+
+    simpleBlockItem(ModBlocks.EMO_DOOR);
+
   }
 
   /**
@@ -76,6 +85,21 @@ public class ModItemModelProvider extends ItemModelProvider {
     return withExistingParent(item.getId().getPath(),
         new ResourceLocation("item/generated")).texture("layer0",
           new ResourceLocation(InfiniteEmojis.MOD_ID, "item/" + item.getId().getPath()));
+
+  }
+
+  /**
+   * Helper method for creating a simple "item/generated" model for a block.
+   *
+   * @param block Block to generate the simple ItemModelBuilder for
+   * @return an ItemModelBuilder
+   */
+  @CanIgnoreReturnValue
+  private ItemModelBuilder simpleBlockItem(RegistryObject<Block> block) {
+
+    return withExistingParent(block.getId().getPath(),
+        new ResourceLocation("item/generated")).texture("layer0",
+          new ResourceLocation(InfiniteEmojis.MOD_ID, "item/" + block.getId().getPath()));
 
   }
 

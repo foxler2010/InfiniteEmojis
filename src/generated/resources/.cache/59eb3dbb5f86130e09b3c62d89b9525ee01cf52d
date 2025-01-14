@@ -1,8 +1,16 @@
-// 1.20.6	2024-12-31T15:05:28.2731529	Loot Tables
+// 1.20.6	2025-01-09T17:28:20.4514253	Loot Tables
 36cbd7c3a5b64156b1453e4a434f980681099601 data/infiniteemojis/loot_tables/blocks/beaming_face_block.json
+d011aec110bd469ba0a977a6c3491677ff64759f data/infiniteemojis/loot_tables/blocks/emo_button.json
+4568b588f7f3a15fbc856b03461a289bb91a9800 data/infiniteemojis/loot_tables/blocks/emo_door.json
+94349b9276586b1f7f5dc19e788acf271dff4576 data/infiniteemojis/loot_tables/blocks/emo_fence.json
+c45a3a739c0284b8ff9e561d30ea204812e0ec4d data/infiniteemojis/loot_tables/blocks/emo_fence_gate.json
 79ee10353b8eddc4d5039e23a64f119ce476fc2b data/infiniteemojis/loot_tables/blocks/emo_leaves.json
 416082fa56733b6ecfee9e9f1af8db1e85779a13 data/infiniteemojis/loot_tables/blocks/emo_log.json
 6304504dd8c86d0c8426ab516ed810f5e8b7b26b data/infiniteemojis/loot_tables/blocks/emo_planks.json
+deb96b909c161e963e799c3cc515d1c585033a74 data/infiniteemojis/loot_tables/blocks/emo_pressure_plate.json
+17184afdeb124117049c8e99a1cde6fba654961c data/infiniteemojis/loot_tables/blocks/emo_slab.json
+a88be26d43af41e93374ab3d06082900d310ef6a data/infiniteemojis/loot_tables/blocks/emo_stairs.json
+a8e0ffec6ac19fea24c84cb730429731af304646 data/infiniteemojis/loot_tables/blocks/emo_trapdoor.json
 3e571072b6a0e9d720c26528a28f7a98379adf38 data/infiniteemojis/loot_tables/blocks/emo_wood.json
 5758f77ecd9624468f6e53997eb888af0a70af18 data/infiniteemojis/loot_tables/blocks/face_blowing_a_kiss_block.json
 392da9ca4cd88a0bb641b8a008bb51be510a1168 data/infiniteemojis/loot_tables/blocks/grinning_face_block.json

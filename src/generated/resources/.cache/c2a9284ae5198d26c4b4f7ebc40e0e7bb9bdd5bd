@@ -1,4 +1,4 @@
-// 1.20.6	2024-12-16T16:30:05.0923557	Item Models: infiniteemojis
+// 1.20.6	2025-01-09T22:04:41.8217749	Item Models: infiniteemojis
 81d0e2222c01b0a518f465854aa7ce631aa37740 assets/infiniteemojis/models/item/beaming_face.json
 ca91f2615557c4341ca7bcef5ce2a45930034e3d assets/infiniteemojis/models/item/beaming_smile.json
 683bc0d49d6815212941c8ac59e90af7f30427a8 assets/infiniteemojis/models/item/big_eyebrows_up_eyes.json
@@ -7,6 +7,10 @@ ca91f2615557c4341ca7bcef5ce2a45930034e3d assets/infiniteemojis/models/item/beami
 3a59cf7a4b8f113809817f1a8682f90ea829238d assets/infiniteemojis/models/item/closed_eyes.json
 0a457cef112621818202787261ce8306c0a33fce assets/infiniteemojis/models/item/dollar_eyes.json
 ca59838bac65527babfab5938c9aa98187e7c782 assets/infiniteemojis/models/item/drooling_mouth.json
+8da3d8453aa55d9be99a90c5c5207dfc4374a2d3 assets/infiniteemojis/models/item/emo_button.json
+22ddf8c6f07f35b0514783a61b62827194e23a1a assets/infiniteemojis/models/item/emo_door.json
+f34b69e4a7c998dc3d3927375f94203dbef16634 assets/infiniteemojis/models/item/emo_fence.json
+c93afac8b6d8a58aaa291a9147fb9c5b80978e35 assets/infiniteemojis/models/item/emo_trapdoor.json
 735affe9f806e4a41efa7f35ce6cf1cbf863fd7f assets/infiniteemojis/models/item/eyes.json
 76d9d87230c60de82a7b0cdadfff0bb99a0dae6e assets/infiniteemojis/models/item/face.json
 b3f26ed898d9bdf7b4662b71bc823f8691a0c158 assets/infiniteemojis/models/item/face_blowing_a_kiss.json

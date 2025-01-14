@@ -11,14 +11,31 @@ import net.minecraftforge.common.ToolAction;
 import org.jetbrains.annotations.Nullable;
 import top.drewssite.infiniteemojis.block.ModBlocks;
 
+/**
+ * Custom log and wood blocks' type.
+ */
 public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
 
+  /**
+   * Constructor for ModFlammableRotatedPillarBlock.
+   *
+   * @param properties Properties of the Block.
+   */
   public ModFlammableRotatedPillarBlock(Properties properties) {
 
     super(properties);
 
   }
 
+  /**
+   * Returns whether the Block is flammable.
+   *
+   * @param state BlockState
+   * @param level BlockGetter
+   * @param pos BlockPos
+   * @param direction Direction
+   * @return Whether the Block is flammable.
+   */
   @Override
   public boolean isFlammable(
       BlockState state,
@@ -30,6 +47,15 @@ public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
 
   }
 
+  /**
+   * Returns the flammability of the Block.
+   *
+   * @param state BlockState
+   * @param level BlockGetter
+   * @param pos BlockPos
+   * @param direction Direction
+   * @return The flammability of the Block.
+   */
   @Override
   public int getFlammability(
       BlockState state,
@@ -41,6 +67,15 @@ public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
 
   }
 
+  /**
+   * Returns the fire spread speed of the Block.
+   *
+   * @param state BlockState
+   * @param level BlockGetter
+   * @param pos BlockPos
+   * @param direction Direction
+   * @return The fire spread speed of the Block.
+   */
   @Override
   public int getFireSpreadSpeed(
       BlockState state,
@@ -52,6 +87,20 @@ public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
 
   }
 
+  /**
+   * Returns the BlockState that should replace the current one when a tool is used on it.
+   *
+   * <p>In this case, the method checks if the current state is a log,
+   * and then if the player is using an axe on it. If so, the method returns
+   * a stripped log. If not the method passes it to the super
+   * to do anything else if needed.
+   *
+   * @param state Current state
+   * @param context Context of the action
+   * @param toolAction ToolAction; passed straight to super
+   * @param simulate boolean; passed straight to super
+   * @return The BlockState that should replace the current one when a tool is used on it.
+   */
   @Override
   public @Nullable BlockState getToolModifiedState(
       BlockState state,
