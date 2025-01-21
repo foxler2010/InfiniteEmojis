@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "infiniteemojis:block/kissing_face_with_closed_eyes_block"
-  }
-}

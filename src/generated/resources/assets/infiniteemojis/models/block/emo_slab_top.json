@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "infiniteemojis:block/emo_planks",
-    "side": "infiniteemojis:block/emo_planks",
-    "top": "infiniteemojis:block/emo_planks"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "infiniteemojis:block/grinning_face_with_big_eyes_block"
-  }
-}
