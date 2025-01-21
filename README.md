@@ -12,6 +12,12 @@ and different variations can be put together to create all sorts of different ex
 
 ## This mod is still in development!
 
+### The switch from Forge to NeoForge is in progress and taking place in the "neoforge" branch!
+
+Along with porting to a new mod loader, the "neoforge" branch also targets Minecraft 1.21.1 instead of the older 1.20.6.
+
+The porting process will take some time, but once I'm done I'll have the great resources of NeoForge to help make the modding process even easier.
+
 ### Currently, there are only 16 of the Unicode emojis in-game.
 
 Many, many more are planned to be added as well as the ability
